@@ -41,7 +41,7 @@ function Add()  {
             
           };
         //   console.log(values);
-          console.log(newProduct,"vaa");
+         
           axios.post('http://localhost:4000/products/add', newProduct).then((res) => console.log(res.data));
         navigate('/list', { replace: true });
          }

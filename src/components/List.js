@@ -14,7 +14,7 @@ import {
 
 
 function List() {
-    const [showCityDetails, setShowCityDetails] = useState([]);
+    const [showProductDetails, setShowProductDetails] = useState([]);
 
     const TABLE_HEAD = [
         { id: 'name',   },
@@ -29,7 +29,7 @@ function List() {
         .then((res)=>{
       
          
-          setShowCityDetails(res.data)
+          setShowProductDetails(res.data)
         
         
         })
@@ -44,7 +44,7 @@ return (
 		<th>Quantity</th>
         <th>Category</th>
 		</tr>
-		{showCityDetails.map((row , key) => {
+		{showProductDetails.map((row , key) => {
             const {  name, price, quantity, category} = row;
 		return (
 			<tr key={key}>
