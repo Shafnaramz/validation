@@ -53,7 +53,6 @@ const { errors, touched,  getFieldProps ,handleSubmit } = formik;
             helperText={touched.email && errors.email}/>
           </div>
           <div className="input-group" >
-            {/* <label htmlFor="password">Password</label> */}
             <input type="password"
              name="password"
              autoComplete="password"
